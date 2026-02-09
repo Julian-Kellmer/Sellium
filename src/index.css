@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+/* @import './fontsImport.css'; */
+
+/* Base */
+@import '../styles/base/reset.css';
+
+/* Theme tokens */
+@import '../styles/theme/tokens.css';
+@import '../styles/theme/colors.css';
+
+/* Utilities */
+@import '../styles/utilities/typography.css';
+@import '../styles/utilities/grid.css';

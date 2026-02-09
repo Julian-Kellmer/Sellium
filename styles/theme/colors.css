@@ -1,0 +1,52 @@
+:root {
+  /* Base Variables (Mode 1 / Default) */
+  --primary: #1e1e1e;
+  --secondary: #eb1c24;
+  --tertiary: #c6af8d;
+  --lightground: #fcf8ed;
+  --lightground2: #eae0ce;
+  --app-bg: #f1ece6;
+
+  /* About Section Variables */
+  --bg-about: #1e1e1e;
+  --text-about: #fcf8ed;
+
+  /* Team Section Variables */
+  --bg-team: transparent;
+  --text-team-title: #1e1e1e;
+}
+
+[data-theme='mode-2'] {
+  /* Mode 2 Overrides */
+  --primary: #1e1e1e; /* Explicitly kept same if needed, or overridden */
+  --secondary: #211262; /* Dark Blue */
+  --tertiary: #ffffff;
+  --lightground: #ffffff;
+  --lightground2: #ffffff;
+  --app-bg: linear-gradient(135deg, #ffffff 0%, #927eff 100%);
+
+  /* About Section Mode 2 */
+  --bg-about: #ffffff;
+  --text-about: #1e1e1e;
+
+  /* Team Section Mode 2 (Inverted Gradient: Purple -> White) */
+  --bg-team: linear-gradient(180deg, #927eff 0%, #ffffff 100%);
+  --text-team-title: #ffffff;
+}
+
+@theme {
+  /* Map Tailwind utilities to these CSS variables */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-lightground: var(--lightground);
+  --color-lightground2: var(--lightground2);
+  --color-app-bg: var(--app-bg);
+
+  /* About Section */
+  --color-bg-about: var(--bg-about);
+  --color-text-about: var(--text-about);
+
+  /* Team Section */
+  --color-text-team-title: var(--text-team-title);
+}

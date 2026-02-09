@@ -1,0 +1,84 @@
+@theme {
+  /* Fonts */
+  --font-satoshi: 'satoshi', sans-serif;
+  --font-inter: 'inter', sans-serif;
+
+  /* Web */
+
+  --web-h1-size: 47px;
+  --web-h1-weight: 600;
+  --web-h1-line-height: 47px;
+  --web-h1-tracking: -0.02em;
+
+  --web-h2-size: 40px;
+  --web-h2-weight: 500;
+  --web-h2-line-height: 48px;
+  --web-h2-tracking: -0.02em;
+
+  --web-h3-size: 40px;
+  --web-h3-weight: 400;
+  --web-h3-line-height: 40px;
+  --web-h3-tracking: -0.02em;
+
+  --web-h4-size: 33px;
+  --web-h4-weight: 300;
+  --web-h4-line-height: 32px;
+  --web-h4-tracking: -0.02em;
+
+  --web-h5-size: 23px;
+  --web-h5-weight: 500;
+  --web-h5-line-height: 24px;
+  --web-h5-tracking: -0.02em;
+
+  --web-h6-size: 19px;
+  --web-h6-weight: 400;
+  --web-h6-line-height: 20px;
+  --web-h6-tracking: -0.02em;
+
+  --web-body-size: 16px;
+  --web-body-weight: 400;
+  --web-body-line-height: 24px;
+  --web-body-tracking: -0.02em;
+
+  --web-small-size: 13px;
+  --web-small-weight: 400;
+  --web-small-line-height: 13px;
+  --web-small-tracking: -0.02em;
+
+  /* Mobile */
+
+  --mobile-h1-size: 32px;
+  --mobile-h1-weight: 600;
+  --mobile-h1-line-height: 32px;
+  --mobile-h1-tracking: -0.02em;
+
+  --mobile-h2-size: 28px;
+  --mobile-h2-weight: 400;
+  --mobile-h2-line-height: 28px;
+  --mobile-h2-tracking: -0.02em;
+
+  --mobile-h3-size: 25px;
+  --mobile-h3-weight: 400;
+  --mobile-h3-line-height: 25px;
+  --mobile-h3-tracking: -0.02em;
+
+  --mobile-h4-size: 22px;
+  --mobile-h4-weight: 500;
+  --mobile-h4-line-height: 22px;
+  --mobile-h4-tracking: -0.02em;
+
+  --mobile-h5-size: 20px;
+  --mobile-h5-weight: 500;
+  --mobile-h5-line-height: 20px;
+  --mobile-h5-tracking: -0.02em;
+
+  --mobile-h6-size: 18px;
+  --mobile-h6-weight: 300;
+  --mobile-h6-line-height: 18px;
+  --mobile-h6-tracking: -0.02em;
+
+  --mobile-body-size: 16px;
+  --mobile-body-weight: 300;
+  --mobile-body-line-height: 24px;
+  --mobile-body-tracking: -0.02em;
+}
