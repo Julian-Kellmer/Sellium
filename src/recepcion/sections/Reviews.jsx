@@ -72,7 +72,7 @@ const Reviews = () => {
         <div
           ref={leftColRef}
           className='col-span-12 md:col-span-6 flex flex-col justify-start pt-10 h-fit'>
-          <h2 className='text-3xl md:text-5xl font-bold leading-tight text-white font-poppins'>
+          <h2 className='text-3xl md:text-5xl font-bold leading-tight text-white font-poppins px-4 md:px-0'>
             Con <span className='text-[#00C9A7]'>Sellium</span> el crecimiento
             es garantizado, mira nuestros casos de éxito
           </h2>

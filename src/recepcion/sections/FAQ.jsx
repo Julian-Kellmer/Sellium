@@ -68,7 +68,7 @@ const FAQ = () => {
 
           <div className='w-full aspect-video bg-black/20 rounded-2xl overflow-hidden shadow-2xl border border-white/10'>
             <video
-              src='/SelliumHorizontal2.mp4'
+              src='/SelliumHorizontal.webm'
               controls
               playsInline
               className='w-full h-full object-cover'

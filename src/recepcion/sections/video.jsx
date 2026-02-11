@@ -7,8 +7,11 @@ const Video = () => {
         <div className='col-span-full my-8 text-left'>
           <div className='relative w-full overflow-hidden rounded-2xl bg-transparent shadow-2xl'>
             <video
-              src='/SelliumHorizontal2.mp4'
+              src='/SelliumHorizontal.webm'
               controls
+              autoPlay
+              muted
+              loop
               playsInline
               className='w-full h-auto object-cover rounded-2xl'
             />

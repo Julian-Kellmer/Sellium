@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
-  const [logoSize, setLogoSize] = useState(250) // Start large for Recepcion
+  const [logoSize, setLogoSize] = useState(
+    typeof window !== 'undefined' && window.innerWidth < 768 ? 200 : 250,
+  ) // Start large for Recepcion
   const [showText, setShowText] = useState(false)
   const location = useLocation()
   const isRecepcion = location.pathname === '/recepcion'
@@ -13,9 +15,10 @@ const Header = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY
 
-      // Logo Logic: 250px -> 50px over 200px
+      // Logo Logic: Mobile 200px / Desktop 250px -> 50px over 200px
+      const isMobile = window.innerWidth < 768
       const maxScroll = 200
-      const startSize = 250
+      const startSize = isMobile ? 200 : 250
       const minSize = 50
 
       if (scrollY <= maxScroll) {
