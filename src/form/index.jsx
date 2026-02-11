@@ -7,7 +7,6 @@ import { FormProvider } from '../context/FormProvider'
 const Form = () => {
   const [step, setStep] = useState(1)
   const [isCalendlyLoading, setIsCalendlyLoading] = useState(false)
-
   const handleNextStep = () => {
     setIsCalendlyLoading(true)
   }
@@ -28,8 +27,8 @@ const Form = () => {
               </span>
             </h1>
             <h2 className='text-h4 '>
-              Solo para tiendas online que facturen más de <span className='text-tertiary'>20.000$</span>{' '}
-              al mes.
+              Solo para tiendas online que facturen más de{' '}
+              <span className='text-tertiary'>20.000$</span> al mes.
             </h2>
           </div>
 

@@ -38,11 +38,6 @@ const Step1 = ({ onNext, isLoading }) => {
       newErrors.lastName = 'El apellido debe tener al menos 3 letras'
     }
 
-    // Website (Not empty)
-    if (!formData.website) {
-      newErrors.website = 'Ingresa el link de tu web'
-    }
-
     // Phone (Not empty)
     if (!formData.phone) {
       newErrors.phone = 'Ingresa un teléfono'
@@ -140,7 +135,7 @@ const Step1 = ({ onNext, isLoading }) => {
       {/* Link - Desktop Row 3 Col 1 */}
       <div className='md:row-start-3 md:col-start-1'>
         <input
-          type='url'
+          type='text'
           placeholder='Link de la pagina web de tu negocio'
           value={formData.website}
           onChange={(e) => updateFormData('website', e.target.value)}
