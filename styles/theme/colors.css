@@ -2,7 +2,7 @@
   /* Base Variables (Mode 1 / Default) */
   --primary: #1e1e1e;
   --secondary: #6e4eff;
-  --tertiary: #1e9577;
+  --tertiary: #43a58c;
 
   --app-bg: linear-gradient(180deg, #1e1e1e 0%, #6e4eff 100%);
 
@@ -16,16 +16,13 @@
 }
 
 @theme {
-  /* Map Tailwind utilities to these CSS variables */
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
   --color-app-bg: var(--app-bg);
 
-  /* About Section */
   --color-bg-about: var(--bg-about);
   --color-text-about: var(--text-about);
 
-  /* Team Section */
   --color-text-team-title: var(--text-team-title);
 }
