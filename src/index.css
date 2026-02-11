@@ -11,3 +11,13 @@
 /* Utilities */
 @import '../styles/utilities/typography.css';
 @import '../styles/utilities/grid.css';
+
+/* Fix for PhoneInput country select options visibility */
+.PhoneInputCountrySelect {
+  color: black;
+  background-color: white;
+}
+.PhoneInputCountrySelect option {
+  color: black;
+  background-color: white;
+}

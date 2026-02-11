@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Form from './form'
+import Recepcion from './recepcion'
 function App() {
-    const lenisRef = useRef()
+  const lenisRef = useRef()
 
   useEffect(() => {
     function update(time) {
@@ -20,7 +21,7 @@ function App() {
   }, [])
   return (
     <>
-    <ReactLenis
+      <ReactLenis
         root
         options={{ autoRaf: false }}
         ref={lenisRef}
@@ -32,14 +33,10 @@ function App() {
             path='/'
             element={<Form />}
           />
-          {/* <Route
-            path='/nosotros'
-            element={<Nosotros />}
-          />
           <Route
-            path='/servicios'
-            element={<Servicios />}
-          /> */}
+            path='/recepcion'
+            element={<Recepcion />}
+          />
         </Routes>
         <Footer />
       </Router>

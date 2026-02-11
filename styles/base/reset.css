@@ -1,3 +1,4 @@
+@import "../utilities/typography.css";
 :root {
   --background: #f1ece6;
   --warmground: #d6c3a5;
@@ -9,7 +10,7 @@
 body {
   background: var(--app-bg); /* Using the raw variable for background */
   color: var(--foreground);
-  font-family: var(--font-pp);
+  font-family: var(--font-poppins);
   transition:
     background 0.5s ease,
     color 0.3s ease;
