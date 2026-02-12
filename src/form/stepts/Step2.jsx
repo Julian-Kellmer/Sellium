@@ -16,6 +16,7 @@ const Step2 = ({ onReady }) => {
 
     const params = new URLSearchParams({
       hide_gdpr_banner: '1',
+      locale: 'es',
       'prefill[name]': fullName,
       'prefill[email]': formData.email || '',
     })

@@ -18,7 +18,7 @@ const Header = () => {
       // Logo Logic: Mobile 200px / Desktop 250px -> 50px over 200px
       const isMobile = window.innerWidth < 768
       const maxScroll = 200
-      const startSize = isMobile ? 200 : 250
+      const startSize = isMobile ? 120 : 250
       const minSize = 50
 
       if (scrollY <= maxScroll) {
