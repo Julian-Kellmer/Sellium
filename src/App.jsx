@@ -7,6 +7,10 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Form from './form'
 import Recepcion from './recepcion'
+import { FormProvider } from './context/FormProvider'
+import Calendly from './calendly'
+import MetaPixelTracker from './utils/MetaPixelTracker'
+
 function App() {
   const lenisRef = useRef()
 
@@ -26,20 +30,27 @@ function App() {
         options={{ autoRaf: false }}
         ref={lenisRef}
       />
-      <Router>
-        <Header />
-        <Routes>
-          <Route
-            path='/'
-            element={<Form />}
-          />
-          <Route
-            path='/recepcion'
-            element={<Recepcion />}
-          />
-        </Routes>
-        <Footer />
-      </Router>
+      <FormProvider>
+        <Router>
+          <MetaPixelTracker />
+          <Header />
+          <Routes>
+            <Route
+              path='/'
+              element={<Form />}
+            />
+            <Route
+              path='/Calendly'
+              element={<Calendly />}
+            />
+            <Route
+              path='/recepcion'
+              element={<Recepcion />}
+            />
+          </Routes>
+          <Footer />
+        </Router>
+      </FormProvider>
     </>
   )
 }

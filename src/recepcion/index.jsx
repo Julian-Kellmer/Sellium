@@ -1,14 +1,14 @@
 import React from 'react'
-import Video from './sections/video'
 import Reviews from './sections/Reviews'
 import FAQ from './sections/FAQ'
 import '@fontsource/poppins'
+import SmartVideo from '../components/SmartVideos'
 const Recepcion = () => {
   return (
     <sections className=''>
       <div className='layout-wrap w-full flex flex-col items-center justify-center p-4 text-white bg-[#1e1e1e]'>
-        <div className='layout-grid w-full max-w-7xl md:min-h-screen min-h-[55svh] '>
-          <div className='col-span-full my-8 text-left flex flex-col items-start justify-end md:justify-center px-4 md:px-0'>
+        <div className='layout-grid w-full max-w-7xl md:min-h-[70svh] min-h-[55svh]  '>
+          <div className='col-span-full my-8 text-left flex flex-col items-start justify-end md:justify-end px-4 md:px-0'>
             <h1 className='text-3xl md:text-5xl font-bold leading-tight mb-4 font-roboto '>
               Tu llamada aun no fue confirmada, Espera la comunicación via{' '}
               <span className='text-tertiary'>Whatsapp</span>
@@ -20,7 +20,11 @@ const Recepcion = () => {
             </p>
           </div>
         </div>
-        <Video />
+        <SmartVideo
+          webmSrc='/SelliumHorizontal.webm'
+          mp4Src='/Video1OPT.mp4'
+          poster='PosterVideo1.png'
+        />
         <Reviews />
       </div>
       <FAQ />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SmartVideo from '../../components/SmartVideos'
 
 const faqData = [
   {
@@ -66,14 +67,11 @@ const FAQ = () => {
             <span className='text-[#00C9A7] block mt-2'>Acá te lo cuento</span>
           </h2>
 
-          <div className='w-full aspect-video bg-black/20 rounded-2xl overflow-hidden shadow-2xl border border-white/10'>
-            <video
-              src='/SelliumHorizontal.webm'
-              controls
-              playsInline
-              className='w-full h-full object-cover'
-            />
-          </div>
+          <SmartVideo
+            webmSrc='/SelliumHorizontal2.webm'
+            mp4Src='/Video2OPT.mp4'
+            poster='PosterVideo2.png'
+          />
         </div>
 
         {/* FAQ Section */}
