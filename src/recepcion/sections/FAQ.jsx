@@ -68,9 +68,9 @@ const FAQ = () => {
           </h2>
 
           <SmartVideo
-            webmSrc='/SelliumHorizontal2.webm'
-            mp4Src='/Video2OPT.mp4'
-            poster='PosterVideo2.png'
+            webmSrc='/SelliumHorizontal.webm'
+            mp4Src='/Video1OPT.mp4'
+            poster='PosterVideo1.png'
           />
         </div>
 
