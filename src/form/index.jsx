@@ -6,7 +6,7 @@ const Form = () => {
   const navigate = useNavigate()
 
   const handleNextStep = () => {
-    navigate('/Calendly')
+    navigate('/calendly')
   }
 
   return (
@@ -18,12 +18,14 @@ const Form = () => {
               Contactanos para que tus clientes no vayan a tu competencia
             </span>
           </h1>
-          <h2 className='text-h4 '>
+          <h2 className='text-h4 text-tertiary '>
             Solo para tiendas online que facturen más de{' '}
             <span className='text-tertiary'>U$D 20.000</span> al mes.
           </h2>
         </div>
-
+        <div className='md:col-span-10 md:col-start-2 col-span-full text-center'>
+          <h5 className='text-h2 text-white '> PASO 1 de 2 </h5>
+        </div>
         {/* Step 1: Always visible */}
         <Step1 onNext={handleNextStep} />
       </div>

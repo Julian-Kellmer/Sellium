@@ -2,14 +2,19 @@ import './App.css'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ReactLenis } from './components/ReactLenis'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Form from './form'
 import Recepcion from './recepcion'
 import { FormProvider } from './context/FormProvider'
 import Calendly from './calendly'
-import MetaPixelTracker from './utils/MetaPixelTracker'
+import MetaPixelTracker from './analytics/MetaPixelTracker'
 
 function App() {
   const lenisRef = useRef()
@@ -40,8 +45,17 @@ function App() {
               element={<Form />}
             />
             <Route
-              path='/Calendly'
+              path='/calendly'
               element={<Calendly />}
+            />
+            <Route
+              path='/Calendly'
+              element={
+                <Navigate
+                  to='/calendly'
+                  replace
+                />
+              }
             />
             <Route
               path='/recepcion'

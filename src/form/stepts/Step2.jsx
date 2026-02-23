@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useFormContext } from '../../context/FormContext'
 
 import { CALENDLY_CONFIG } from '../../constants/calendly'
+import { fbqTrack } from '../../analytics/metaPixel'
 
 const Step2 = ({ onReady }) => {
   const navigate = useNavigate()
@@ -60,6 +61,7 @@ const Step2 = ({ onReady }) => {
         e.data.event === 'calendly.event_scheduled' ||
         (e.data.event && e.data.event.indexOf('event_scheduled') > -1)
       ) {
+        fbqTrack('Lead')
         window.scrollTo(0, 0)
         navigate('/recepcion')
       }
