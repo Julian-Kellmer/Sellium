@@ -5,7 +5,6 @@ const Header = () => {
   const [logoSize, setLogoSize] = useState(
     typeof window !== 'undefined' && window.innerWidth < 768 ? 200 : 250,
   ) // Start large for Recepcion
-  const [showText, setShowText] = useState(false)
   const location = useLocation()
   const isRecepcion = location.pathname === '/recepcion'
 
@@ -18,7 +17,7 @@ const Header = () => {
       // Logo Logic: Mobile 200px / Desktop 250px -> 50px over 200px
       const isMobile = window.innerWidth < 768
       const maxScroll = 200
-      const startSize = isMobile ? 120 : 250
+      const startSize = isMobile ? 60 : 100
       const minSize = 50
 
       if (scrollY <= maxScroll) {
@@ -30,7 +29,6 @@ const Header = () => {
       }
 
       // Text Logic: Show after 200px
-      setShowText(scrollY > 200)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -63,7 +61,7 @@ const Header = () => {
       {/* Fade-in Text - Only on /recepcion */}
       {isRecepcion && (
         <div
-          className={`text-white font-poppins font-bold text-xl md:text-2xl transition-opacity duration-500 ${showText ? 'opacity-100' : 'opacity-0'}`}>
+          className={`text-white font-poppins font-bold text-xl md:text-2xl transition-opacity duration-500 `}>
           Sellium
         </div>
       )}
