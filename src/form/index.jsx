@@ -34,7 +34,7 @@ const Form = () => {
           <h1 className='text-3xl md:text-5xl font-bold font-poppins mb-2'>
             En solo 30 días, ya podes activar
           </h1>
-          <h1 className='text-3xl md:text-5xl font-bold font-poppins text-[#00C9A7] mb-12'>
+          <h1 className='text-3xl md:text-5xl font-bold font-poppins text-[#3ce05d] mb-12'>
             tu sistema de fidelización propio
           </h1>
 
@@ -45,7 +45,7 @@ const Form = () => {
             ¿Cómo hacemos para que tus clientes no se vayan a tu competencia?
           </h2>
 
-          <div className='w-full max-w-4xl aspect-[16/9] bg-[#d9d9d9] flex justify-center items-center rounded-3xl border-trasparent overflow-hidden'>
+          <div className='w-full max-w-4xl aspect-[16/9]  flex justify-center items-center rounded-3xl border-trasparent overflow-hidden'>
             {/* VIDEO PLACEHOLDER */}
             <SmartVideo
               webmSrc='/Video3OPT.webm'
@@ -66,7 +66,7 @@ const Form = () => {
           <h2 className='text-2xl md:text-4xl font-bold text-center mb-12 px-4'>
             Con Sellium el crecimiento es garantizado,
             <br />
-            <span className='text-[#00C9A7] mt-2 block'>
+            <span className='text-[#3ce05d] mt-2 block'>
               mira nuestros casos de éxito
             </span>
           </h2>

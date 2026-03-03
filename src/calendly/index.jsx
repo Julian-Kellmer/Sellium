@@ -11,9 +11,9 @@ const Calendly = () => {
               Contactanos para que tus clientes no vayan a tu competencia
             </span>
           </h1>
-          <h2 className='text-h4 text-tertiary '>
+          <h2 className='text-h4 text-[#3ce05d] '>
             Solo para tiendas online que facturen más de{' '}
-            <span className='text-tertiary'>U$D 20.000</span> al mes.
+            <span className='text-[#3ce05d]'>U$D 20.000</span> al mes.
           </h2>
         </div>
         <div className='md:col-span-10 md:col-start-2 col-span-full text-center'>
