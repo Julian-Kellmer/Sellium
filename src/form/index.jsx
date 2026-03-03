@@ -12,6 +12,13 @@ const Form = () => {
     navigate('/calendly')
   }
 
+  const scrollToForm = () => {
+    const formElement = document.getElementById('form-section')
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   // Double the reviews for smooth continuous scroll
   const marqueeReviews = [...reviewsData, ...reviewsData]
 
@@ -38,14 +45,20 @@ const Form = () => {
             ¿Cómo hacemos para que tus clientes no se vayan a tu competencia?
           </h2>
 
-          <div className='w-full max-w-4xl aspect-[16/9] bg-[#d9d9d9] flex justify-center items-center rounded-xl overflow-hidden'>
+          <div className='w-full max-w-4xl aspect-[16/9] bg-[#d9d9d9] flex justify-center items-center rounded-3xl border-trasparent overflow-hidden'>
             {/* VIDEO PLACEHOLDER */}
             <SmartVideo
-              webmSrc='/SelliumHorizontal.webm'
-              mp4Src='/Video1OPT.mp4'
-              poster='PosterVideo1.png'
+              webmSrc='/Video3OPT.webm'
+              mp4Src='/Video3OPT.mp4'
+              poster='PosterVideo3.png'
             />
           </div>
+
+          <button
+            onClick={scrollToForm}
+            className='mt-8 bg-[#3ce05d] hover:bg-[#32b84d] text-white font-bold py-3 px-10 rounded-md transition-colors text-base md:text-lg'>
+            AGENDÁ UNA DEMO
+          </button>
         </div>
 
         {/* --- REVIEWS SECTION --- */}
@@ -104,13 +117,21 @@ const Form = () => {
               </div>
             </div>
           </div>
+
+          <button
+            onClick={scrollToForm}
+            className='mt-8 bg-[#3ce05d] hover:bg-[#32b84d] text-white font-bold py-3 px-10 rounded-md transition-colors text-base md:text-lg'>
+            AGENDÁ UNA DEMO
+          </button>
         </div>
 
         {/* Divider */}
         <div className='col-span-10 col-start-2 border-t border-white/10 my-8'></div>
 
         {/* --- FORM SECTION --- */}
-        <div className='col-span-10 col-start-2 md:col-span-8 md:col-start-3 flex flex-col items-center text-center px-4'>
+        <div
+          id='form-section'
+          className='col-span-10 col-start-2 md:col-span-8 md:col-start-3 flex flex-col items-center text-center px-4 scroll-mt-24'>
           <h2 className='text-2xl md:text-3xl font-regular mb-6'>
             Contanos de tu e-commerce
             <br />y agenda tu reunion
