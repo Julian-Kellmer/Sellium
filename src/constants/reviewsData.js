@@ -48,22 +48,16 @@ export const reviewsData = [
     text: 'Teníamos un buen volumen de ventas, pero la tasa de recompra era baja. Desde el lanzamiento de nuestra app para clientes, logramos aumentar la recompra y fortalecer la relación con quienes ya nos habían elegido. Hoy usamos la app para comunicar lanzamientos, enviar notificaciones con promociones y mantenernos presentes. Eso hizo que la recompra aumente y que la facturación crezca de forma más sostenida.',
     image: './tenazco.png',
   },
+
   {
     id: 8,
-    name: 'Nikanor Lang',
-    role: ' Marketing Manager en TENAZ & CO',
-    text: 'Teníamos un buen volumen de ventas, pero la tasa de recompra era baja. Desde el lanzamiento de nuestra app para clientes, logramos aumentar la recompra y fortalecer la relación con quienes ya nos habían elegido. Hoy usamos la app para comunicar lanzamientos, enviar notificaciones con promociones y mantenernos presentes. Eso hizo que la recompra aumente y que la facturación crezca de forma más sostenida.',
-    image: './tenazco.png',
-  },
-  {
-    id: 9,
     name: 'Franco Levy',
     role: ' E-Commerce Manager de Akita indumentaria',
     text: 'Cada vez que queríamos vender más, la única forma era invertir más en publicidad, y eso nos dejaba con márgenes cada vez más ajustados. Cuando empezamos a trabajar con nuestra propia app, la dinámica cambió. En pocos meses aumentamos la tasa de recompra en un 35% y el ticket promedio creció cerca de un 20%, sin subir la inversión en anuncios. Eso impactó directamente en nuestro LTV: cada cliente empezó a dejarnos más valor en el tiempo. Hoy la facturación es más saludable y, sobre todo, más sostenida.',
     image: './akita.png',
   },
   {
-    id: 10,
+    id: 9,
     name: 'Facundo Benveniste',
     role: ' Founder de Galería Infantil',
     text: 'Nos costaba comunicarnos a aquellos clientes que hace 3 meses no volvían a comprarnos, pero con el nuevo sistema creamos campañas de notificaciones especializadas y la recompra de aquellos entre 3-9 meses inactivos aumento un 40%.',
