@@ -2,14 +2,14 @@ import React from 'react'
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className='bg-[#161616] p-8 rounded-2xl border border-white/5 shadow-xl transition-transform hover:scale-[1.02] w-full max-w-[400px] shrink-0 mx-2 md:mx-4'>
+    <div className='bg-[#161616] p-6 lg:p-8 rounded-2xl border border-white/5 shadow-xl transition-transform hover:scale-[1.02] w-full'>
       {/* Stars */}
-      <div className='flex gap-1 mb-6'>
+      <div className='flex gap-1 mb-4 lg:mb-6'>
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            width='20'
-            height='20'
+            width='16'
+            height='16'
             viewBox='0 0 24 24'
             fill='white'
             className='text-white'>
@@ -20,7 +20,7 @@ const ReviewCard = ({ review }) => {
 
       {/* Header: Image & Name */}
       <div className='flex items-center gap-4 mb-4'>
-        <div className='w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 shrink-0'>
+        <div className='w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden border-2 border-white/20 shrink-0'>
           <img
             src={review.image}
             alt={review.name}
@@ -28,17 +28,17 @@ const ReviewCard = ({ review }) => {
           />
         </div>
         <div>
-          <h4 className='text-white font-bold text-lg font-poppins leading-tight'>
+          <h4 className='text-white font-bold text-base lg:text-lg font-poppins leading-tight'>
             {review.name}
           </h4>
-          <p className='text-gray-400 text-sm font-poppins mt-1'>
+          <p className='text-gray-400 text-xs lg:text-sm font-poppins mt-1'>
             {review.role}
           </p>
         </div>
       </div>
 
       {/* Text */}
-      <p className='text-gray-300 leading-relaxed font-poppins text-sm md:text-base'>
+      <p className='text-gray-300 leading-relaxed font-poppins text-xs md:text-sm lg:text-base'>
         {review.text}
       </p>
     </div>

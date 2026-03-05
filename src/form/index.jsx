@@ -75,7 +75,7 @@ const Form = () => {
           <div className='w-full overflow-hidden flex flex-col gap-6 relative mask-image-linear-x pb-4'>
             {/* Row 1: Left to Right */}
             <div className='flex w-max hover-pause'>
-              <div className='flex gap-6 animate-marquee shrink-0 px-3'>
+              <div className='flex gap-6 animate-marquee shrink-0 pr-6'>
                 {marqueeReviews.map((review, i) => (
                   <ReviewCard
                     key={`ltr-1-${i}`}
@@ -84,7 +84,7 @@ const Form = () => {
                 ))}
               </div>
               <div
-                className='flex gap-6 animate-marquee shrink-0 px-3'
+                className='flex gap-6 animate-marquee shrink-0 pr-6'
                 aria-hidden='true'>
                 {marqueeReviews.map((review, i) => (
                   <ReviewCard
@@ -97,7 +97,7 @@ const Form = () => {
 
             {/* Row 2: Right to Left */}
             <div className='flex w-max hover-pause'>
-              <div className='flex gap-6 animate-marquee-reverse shrink-0 px-3'>
+              <div className='flex gap-6 animate-marquee-reverse shrink-0 pr-6'>
                 {marqueeReviews.map((review, i) => (
                   <ReviewCard
                     key={`rtl-1-${i}`}
@@ -106,7 +106,7 @@ const Form = () => {
                 ))}
               </div>
               <div
-                className='flex gap-6 animate-marquee-reverse shrink-0 px-3'
+                className='flex gap-6 animate-marquee-reverse shrink-0 pr-6'
                 aria-hidden='true'>
                 {marqueeReviews.map((review, i) => (
                   <ReviewCard
@@ -148,7 +148,7 @@ const Form = () => {
         {/* --- LOGO MARQUEE SECTION --- */}
         <div className='col-span-12 mt-16 overflow-hidden w-full relative mask-image-linear-x'>
           <div className='flex w-max'>
-            <div className='flex gap-12 md:gap-24 animate-marquee shrink-0 px-6 items-center'>
+            <div className='flex gap-12 md:gap-24 animate-marquee shrink-0 pr-12 md:pr-24 items-center'>
               {marqueeLogos.map((logo, i) => (
                 <img
                   key={`logo-1-${i}`}
@@ -159,7 +159,7 @@ const Form = () => {
               ))}
             </div>
             <div
-              className='flex gap-12 md:gap-24 animate-marquee shrink-0 px-6 items-center'
+              className='flex gap-12 md:gap-24 animate-marquee shrink-0 pr-12 md:pr-24 items-center'
               aria-hidden='true'>
               {marqueeLogos.map((logo, i) => (
                 <img
