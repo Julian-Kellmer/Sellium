@@ -40,12 +40,16 @@ const ReviewCard = ({ review }) => {
 
       {/* Text */}
       <p className='text-gray-300 leading-relaxed font-poppins text-xs md:text-sm lg:text-base'>
-        {showFullText ? review.text : review.text.slice(0, 300) + '...'}
-        <button
-          onClick={() => setShowFullText(!showFullText)}
-          className='text-[#3ce05d]/50 font-bold ml-2'>
-          {showFullText ? 'Ver menos' : 'Ver más'}
-        </button>
+        {showFullText || review.text.length <= 400
+          ? review.text
+          : review.text.slice(0, 400) + '...'}
+        {review.text.length > 400 && (
+          <button
+            onClick={() => setShowFullText(!showFullText)}
+            className='text-[#3ce05d]/50 font-bold ml-2'>
+            {showFullText ? 'Ver menos' : 'Ver más'}
+          </button>
+        )}
       </p>
     </div>
   )

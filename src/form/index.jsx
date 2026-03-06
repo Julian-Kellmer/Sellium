@@ -22,6 +22,9 @@ const Form = () => {
   // Double the reviews for smooth continuous scroll
   const marqueeReviews = [...reviewsData, ...reviewsData]
 
+  const reversedReviews = [...reviewsData].reverse()
+  const marqueeReviewsRow2 = [...reversedReviews, ...reversedReviews]
+
   // We can just use the review images for the logo marquee as placeholders
   const logos = reviewsData.map((r) => r.image)
   const marqueeLogos = [...logos, ...logos, ...logos, ...logos]
@@ -30,7 +33,7 @@ const Form = () => {
     <div className='layout-wrap min-h-screen w-full flex flex-col items-center pt-16 pb-16 text-white font-poppins bg-[#1e1e1e]'>
       <div className='layout-grid w-full max-w-7xl gap-y-16'>
         {/* --- HEADER SECTION --- */}
-        <div className='col-span-12 flex flex-col items-center text-center px-4'>
+        <div className='col-span-full md:col-span-12 flex flex-col items-center text-center px-4'>
           <h1 className='text-3xl md:text-5xl font-bold font-poppins mb-2'>
             En solo 30 días, ya podes activar
           </h1>
@@ -62,7 +65,7 @@ const Form = () => {
         </div>
 
         {/* --- REVIEWS SECTION --- */}
-        <div className='col-span-12 flex flex-col items-center mt-8'>
+        <div className='col-span-full md:col-span-12 flex flex-col items-center mt-8'>
           <h2 className='text-2xl md:text-4xl font-bold text-center mb-12 px-4'>
             Con Sellium el crecimiento es garantizado,
             <br />
@@ -98,7 +101,7 @@ const Form = () => {
             {/* Row 2: Right to Left */}
             <div className='flex w-max hover-pause'>
               <div className='flex gap-6 animate-marquee-reverse shrink-0 pr-6'>
-                {marqueeReviews.map((review, i) => (
+                {marqueeReviewsRow2.map((review, i) => (
                   <ReviewCard
                     key={`rtl-1-${i}`}
                     review={review}
@@ -108,7 +111,7 @@ const Form = () => {
               <div
                 className='flex gap-6 animate-marquee-reverse shrink-0 pr-6'
                 aria-hidden='true'>
-                {marqueeReviews.map((review, i) => (
+                {marqueeReviewsRow2.map((review, i) => (
                   <ReviewCard
                     key={`rtl-2-${i}`}
                     review={review}
@@ -126,12 +129,12 @@ const Form = () => {
         </div>
 
         {/* Divider */}
-        <div className='col-span-10 col-start-2 border-t border-white/10 my-8'></div>
+        <div className='col-span-full md:col-span-10 md:col-start-2 border-t border-white/10 my-8'></div>
 
         {/* --- FORM SECTION --- */}
         <div
           id='form-section'
-          className='col-span-10 col-start-2 md:col-span-8 md:col-start-3 flex flex-col items-center text-center px-4 scroll-mt-24'>
+          className='col-span-full md:col-span-8 md:col-start-3 flex flex-col items-center text-center px-4 scroll-mt-24'>
           <h2 className='text-2xl md:text-3xl font-regular mb-6'>
             Contanos de tu e-commerce
             <br />y agenda tu reunion
@@ -146,7 +149,7 @@ const Form = () => {
         </div>
 
         {/* --- LOGO MARQUEE SECTION --- */}
-        <div className='col-span-12 mt-16 overflow-hidden w-full relative mask-image-linear-x'>
+        <div className='col-span-full md:col-span-12 mt-16 overflow-hidden w-full relative mask-image-linear-x'>
           <div className='flex w-max'>
             <div className='flex gap-12 md:gap-24 animate-marquee shrink-0 pr-12 md:pr-24 items-center'>
               {marqueeLogos.map((logo, i) => (
