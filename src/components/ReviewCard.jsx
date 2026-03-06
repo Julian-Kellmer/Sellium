@@ -1,8 +1,9 @@
 import React from 'react'
-
+import { useState } from 'react'
 const ReviewCard = ({ review }) => {
+  const [showFullText, setShowFullText] = useState(false)
   return (
-    <div className='bg-[#161616] p-6 lg:p-8 rounded-2xl border border-white/5 shadow-xl transition-transform hover:scale-[1.02] w-full'>
+    <div className='max-w-sm bg-[#161616] p-6 lg:p-8 rounded-2xl border border-white/5 shadow-xl transition-transform hover:scale-[1.02] w-full'>
       {/* Stars */}
       <div className='flex gap-1 mb-4 lg:mb-6'>
         {[...Array(5)].map((_, i) => (
@@ -39,7 +40,12 @@ const ReviewCard = ({ review }) => {
 
       {/* Text */}
       <p className='text-gray-300 leading-relaxed font-poppins text-xs md:text-sm lg:text-base'>
-        {review.text}
+        {showFullText ? review.text : review.text.slice(0, 300) + '...'}
+        <button
+          onClick={() => setShowFullText(!showFullText)}
+          className='text-[#3ce05d]/50 font-bold ml-2'>
+          {showFullText ? 'Ver menos' : 'Ver más'}
+        </button>
       </p>
     </div>
   )
