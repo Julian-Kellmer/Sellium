@@ -13,10 +13,10 @@ const Step1 = ({ onNext, isLoading }) => {
   const [submitError, setSubmitError] = useState('')
 
   const revenueOptions = [
-    '0 a 10.000 USD/Mes',
-    '10.000 a 20.000',
-    '20.000 a 30.000',
-    'Más de 30.000',
+    'Menos de 100',
+    '100 a 500',
+    '500 a 2000',
+    'Más de 2000',
   ]
 
   const validate = () => {
