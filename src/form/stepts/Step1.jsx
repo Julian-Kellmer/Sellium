@@ -173,7 +173,7 @@ const Step1 = ({ onNext, isLoading }) => {
       <div
         className={`bg-white/10 border ${errors.revenue ? 'border-red-500' : 'border-white/20'} rounded-lg p-6 md:col-start-2 md:row-start-3 md:row-span-3 flex flex-col justify-center`}>
         <label className='block text-gray-300 text-sm mb-4 text-left'>
-          Facturacion actual de tu Empresa
+          ¿Cuántas ventas o transacciones tiene tu negocio por mes?
         </label>
         <div className='space-y-4'>
           {revenueOptions.map((option, idx) => (
